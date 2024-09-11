@@ -1,0 +1,153 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 30px;
+  }
+  
+  .logo img {
+    width: 150px; /* Adjust logo size */
+    height: auto;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+  }
+  
+  .nav-links li {
+    margin-left: 30px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .nav-links a:hover, .nav-links a.active {
+    border-bottom: 2px solid white;
+    color: #ffcc00;
+  }
+  
+  /* Hamburger Menu Icon for Mobile */
+  .menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Hero Banner Section */
+  .hero-banner {
+    background-image: url('banner-desktop.jpg'); /* Desktop image */
+    background-size: cover;
+    background-position: center;
+    height: 1030px; /* Desktop banner height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-banner .banner-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .hero-banner h1 {
+    font-size: 48px;
+  }
+  
+  .hero-banner p {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer .social-links {
+    margin-bottom: 10px;
+  }
+  
+  footer .social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  
+  footer .social-links a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    /* Hamburger menu icon for mobile */
+    .menu-icon {
+      display: block;
+    }
+  
+    /* Hide the links by default for mobile */
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+    }
+  
+    /* Show links when toggled */
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-links li {
+      margin: 15px 0;
+    }
+  
+    /* Mobile hero banner */
+    .hero-banner {
+      background-image: url('banner-mobile.jpg'); /* Mobile image */
+      height: 475px;
+    }
+  
+    .hero-banner h1 {
+      font-size: 36px;
+    }
+  
+    .hero-banner p {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-banner h1 {
+      font-size: 28px;
+    }
+  
+    .hero-banner p {
+      font-size: 16px;
+    }
+  }
+  
